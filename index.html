@@ -79,6 +79,7 @@
   
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
+  <!-- 电脑端/大屏幕左侧固定导航栏 -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
 
@@ -100,8 +101,6 @@
       </li>
 
       <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
         <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
@@ -135,25 +134,30 @@
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
 
-      <!-- <li class="bold"> -->
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Taizhen's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <!-- <a aria-label="Open Taizhen's resume in a new tab" href="https://TaizhenYe.github.io/assets/resume/Taizhen_Ye_Resume.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>   -->
-      <!-- </li> -->
+      <li class="bold">
+              <!-- ICONS:
+              1. mdi-action-description
+              2. mdi-file-folder
+              3. mdi-file-folder-open
+              4. mdi-file-attachment
+              5. mdi-file-folder-shared -->
+              <!-- link empty here -->
+              <a aria-label="Open Taizhen's resume in a new tab" href="#resume" target="_blank"
+                onclick="window.open('https://github.com/yeggwithpassion')"
+                class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Places Travelled section" href="#Places-travelled" class="waves-effect waves-dark teal-text"><i
+            class="mdi-maps-place small"></i><span>Places Travelled</span></a>
+      </li>
+
+      
     </ul>
   </nav>
 
   <!-- Nav class 2 -->
+   <!-- 移动端/电脑半屏 顶部导航条 -->
   <nav class="hide-on-large only trigger z-depth-1">
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -194,8 +198,14 @@
       </li>
       <li class="bold">
         <a aria-label="Open Taizhen's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+          href="https://github.com/yeggwithpassion" 
+          target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i>
+          <span>Resume</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Places Travelled section" href="#Places-travelled" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Places Travelled</span></a>
       </li>
     </ul>
   </nav>
@@ -280,7 +290,7 @@
         <p>
           <ul>
             <li><b>Languages:</b> Python, C, C++, zsh</li>
-            <li><b>Databases:</b> MySQL, MongoDB</li>
+            <li><b>Databases:</b> MySQL</li>
             <li><b>Libraries:</b> NumPy, Pandas</li>
             <li><b>Tools & Technologies:</b> Git</li>
             <li><b>Computer Vision & AI:</b> Pytorch, Blender</li>
@@ -595,6 +605,23 @@
               aria-label="Taizhen on Github" href="http://github.com/yeggwithpassion" class="hoverline"
               target="_blank">github.com/yeggwithpassion</a></a>
         </p>
+      </div>
+    </section>
+
+    <!-- Ninth Section: Places Travelled -->
+    <section id="Places-travelled" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Places Travelled</h3>
+      <div class="container">
+        <p> Here are the places I have travelled to...</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481025.2708517499!2d150.93197474999997!3d-33.84824395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e1!3m2!1sen!2sca!4v1790096666376!5m2!1sen!2sca"
+          width="100%"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
       </div>
     </section>
   </main>
