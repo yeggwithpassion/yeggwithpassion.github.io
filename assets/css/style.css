@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(21, 172, 248, 0.388); 
+  border: 6px solid rgba(129, 183, 255, 0.803); 
   border-radius: 50% !important;
 }
 
@@ -348,7 +348,7 @@ h3 {
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: 5px solid #5892ff;
 }
 
 #intro.section .teal {
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(40, 156, 251, 0.462);
 }
 
 .card {
@@ -565,6 +565,48 @@ small {
 /* .teal {
   background-color: #00695c !important;
 } */
+
+/* Projects card title */
+#projects .project-card-title {
+  color: #0976d5;
+  font-size: 24px;
+}
+
+#load-more-btn {
+  position: relative;
+  z-index: 20;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+#load-less-btn {
+  position: relative;
+  z-index: 20;
+  display: none;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  #load-more-btn {
+    position: relative;
+    z-index: 50;
+    display: block;
+    margin: 24px auto;
+    pointer-events: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  #load-less-btn {
+    position: relative;
+    z-index: 50;
+    display: none;
+    margin: 24px auto;
+    pointer-events: auto;
+  }
+}
 
 @media (min-width: 1200px) {
   #experience .container {

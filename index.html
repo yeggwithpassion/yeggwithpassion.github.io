@@ -41,7 +41,7 @@
   <meta property="og:site_name" content="Taizhen Ye | Software Developer" />
   <meta property="article:publisher" content="https://TaizhenYe.github.io/" />
   <meta property="og:image" content="https://TaizhenYe.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
+  <!-- Twitter -->/
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@Taizhen_Ye" />
   <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
@@ -270,19 +270,19 @@
           </h2>
         </blockquote> -->        
         <p>
-          I am a 3rd year Software Engineering Undergraduate Student at Zhejiang University. Currently I was studying as an exchange student major in the faculty of Engineering at University of Toronto, St.George. 
-          
-          I enjoy brain-teasing, problem-solving and coding. Always strive to bring 100% to the work I do.
-
-          I have several developing and research experiences:
-          <ul>
+          I am a 3rd year Software Engineering Undergraduate Student at Zhejiang University. Currently I was studying as an exchange student major in the faculty of Engineering at University of Toronto, St.George.</p>
+        <p>
+          I enjoy brain-teasing, problem-solving and coding.I have several developing and research experiences:
+        </p>
+        
+          <ol>
             <li><b>Software Engineering Lead:</b> Led a team of 7 to build and integrate full-stack account management systems for stock trading platforms.</li>
 
             <li><b>3D Vision Research:</b> Architected an end-to-end 3D pose estimation project from modeling, dataset prep to deep neural network tuning.</li>
 
             <li><b>World Models Research (Current):</b> ……</li>
-          </ul>
-
+          </ol>
+        <p>
           My interests lie in Computer Vision, Computer Graphics and Video generation Models. 
           
           I love the feeling of learning something new bottom-up and coming up with novel idea towards solving challenging problems.
@@ -401,8 +401,11 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row">
+        <div id="projects-container" class="row"> </div>
 
+        <button id="load-more-btn" type="button">Load More</button>
+        <button id="load-less-btn" type="button">Load Less</button>
+      </div>
           
     </section>
 
@@ -655,6 +658,7 @@
       })
     })
   </script>
+  <script src="assets/js/projects.js"></script>
 </body>
 
 </html>
