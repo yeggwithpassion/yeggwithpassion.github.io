@@ -588,9 +588,102 @@ small {
   cursor: pointer;
 }
 
+/* Theme toggle */
+.theme-toggle {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #81b1ff;
+  border-radius: 50%;
+  color: #3456d2;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  height: 42px;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.2s, color 0.2s;
+  width: 42px;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background-color: #81b1ff;
+  color: #ffffff;
+  outline: none;
+}
+
+ul.side-nav .theme-toggle-item {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #21262d;
+  border-color: #aab4bf;
+  color: #f0c65b;
+}
+
+/* Dark theme */
+body.dark-mode {
+  background-color: #161b22;
+  color: #e6edf3;
+}
+
+body.dark-mode main {
+  background: #161b22;
+}
+
+body.dark-mode nav,
+body.dark-mode ul.side-nav,
+body.dark-mode ul.side-nav.fixed li.logo,
+body.dark-mode .card {
+  background-color: #21262d;
+}
+
+body.dark-mode ul.side-nav.fixed li.logo {
+  border-bottom-color: #30363d;
+}
+
+body.dark-mode .card,
+body.dark-mode .card li a,
+body.dark-mode ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+body.dark-mode ul#slide-out li:not(.logo) a span {
+  color: #e6edf3 !important;
+}
+
+body.dark-mode ul.table-of-contents li:not(.logo) a.active,
+body.dark-mode ul.table-of-contents li:not(.logo) a:hover,
+body.dark-mode ul.side-nav li:not(.logo) a:hover,
+body.dark-mode #experience .card-action {
+  background-color: #30363d;
+}
+
+body.dark-mode #experience .card-content .row,
+body.dark-mode #skills h4 {
+  border-bottom-color: #30363d;
+}
+
+body.dark-mode .grey-text,
+body.dark-mode .card-action span,
+body.dark-mode .card ul li li {
+  color: #aab4bf !important;
+}
+
+
+@media (max-width: 992px) {
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+}
+
 @media (max-width: 992px) {
   #load-more-btn {
     position: relative;
+    
     z-index: 50;
     display: block;
     margin: 24px auto;

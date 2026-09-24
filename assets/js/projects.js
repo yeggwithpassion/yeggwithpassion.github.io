@@ -62,3 +62,30 @@ loadlessButton.addEventListener(
 );
 
 renderProjects();
+
+const themeToggles = document.querySelectorAll(".theme-toggle");
+
+function setTheme(theme) {
+  const isDarkMode = theme === "dark";
+
+  document.body.classList.toggle("dark-mode", isDarkMode); // change the body's class(theme)
+  // toggle: add or remove the "dark-mode" class based on the `isDarkMode` variable；有则删无则加
+
+  themeToggles.forEach((themeToggle) => {
+    themeToggle.innerHTML = isDarkMode
+      ? '<i class="fa fa-sun-o" aria-hidden="true"></i>'
+      : '<i class="fa fa-moon-o" aria-hidden="true"></i>';
+    themeToggle.setAttribute("aria-label", isDarkMode ? "Enable light mode" : "Enable dark mode");
+    themeToggle.setAttribute("title", isDarkMode ? "Enable light mode" : "Enable dark mode");
+  });
+}
+
+const savedTheme = localStorage.getItem("theme");
+setTheme(savedTheme || "light");
+
+themeToggles.forEach((themeToggle) => {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme = document.body.classList.contains("dark-mode") ? "light" : "dark";
+    setTheme(nextTheme);
+  });
+});
