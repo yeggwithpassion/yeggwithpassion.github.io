@@ -471,9 +471,6 @@ a.hoverline {
 
 /* main a.hoverline */
 
-/* a.hoverline:hover {
-  border-bottom: 3px solid #24305e !important;
-} */
 
 a.hoverline:hover {
   border-bottom: 3px solid #3facff !important;
