@@ -20,6 +20,9 @@
   height: auto;
 }
 
+.black-text{
+  color: black;
+}
 .tracker {
   /* visibility: hidden; */
   position: fixed;
@@ -320,7 +323,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a0d8ff repeat;
+  background: #98c0ff repeat;
   position: relative;
 }
 
@@ -573,19 +576,23 @@ small {
 }
 
 #load-more-btn {
+  background-color: #81b1ff;
   position: relative;
   z-index: 20;
   display: block;
   margin: 20px auto;
   cursor: pointer;
+  color: #ffffff;
 }
 
 #load-less-btn {
+  background-color: #81b1ff;
   position: relative;
   z-index: 20;
   display: none;
   margin: 20px auto;
   cursor: pointer;
+  color: #ffffff;
 }
 
 /* Theme toggle */
@@ -630,18 +637,23 @@ body.dark-mode {
   color: #e6edf3;
 }
 
-body.dark-mode main {
+body.dark-mode main,
+body.dark-mode #intro.section {
   background: #161b22;
+}
+
+body.dark-mode #intro.section .overlay {
+  background-color: transparent;
 }
 
 body.dark-mode nav,
 body.dark-mode ul.side-nav,
 body.dark-mode ul.side-nav.fixed li.logo,
-body.dark-mode .card {
+body.dark-mode .card{
   background-color: #21262d;
 }
 
-body.dark-mode ul.side-nav.fixed li.logo {
+body.dark-mode ul.side-nav.fixed li.logo{
   border-bottom-color: #30363d;
 }
 
@@ -654,6 +666,7 @@ body.dark-mode ul#slide-out li:not(.logo) a span {
 
 body.dark-mode ul.table-of-contents li:not(.logo) a.active,
 body.dark-mode ul.table-of-contents li:not(.logo) a:hover,
+body.dark-mode ul.side-nav li:not(.logo):hover,
 body.dark-mode ul.side-nav li:not(.logo) a:hover,
 body.dark-mode #experience .card-action {
   background-color: #30363d;
@@ -664,12 +677,20 @@ body.dark-mode #skills h4 {
   border-bottom-color: #30363d;
 }
 
+body.dark-mode #load-more-btn,
+body.dark-mode #load-less-btn {
+  background-color: #30363d;
+  color: #ffffff;
+}
 body.dark-mode .grey-text,
 body.dark-mode .card-action span,
 body.dark-mode .card ul li li {
   color: #aab4bf !important;
 }
 
+body.dark-mode .black-text {
+  color: #ffffff !important;
+}
 
 @media (max-width: 992px) {
   .theme-toggle {
